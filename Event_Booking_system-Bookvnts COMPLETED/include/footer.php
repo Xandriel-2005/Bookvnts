@@ -42,10 +42,10 @@
     </div>
      <!-- Copyright line -->
     <div class="copyright text-white">
-        &copy; 2025 BookVnts Pvt. Ltd. All Rights Reserved.
+        &copy; 2026 BookVnts Pvt. Ltd. All Rights Reserved.
             The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
     </div>
 </section>
-
+<!-----footer ends---------->
 </body>
 </html>
