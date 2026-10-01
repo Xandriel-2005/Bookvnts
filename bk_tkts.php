@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['update_total'])) {
 ?>
 </br>
 </br>
+</br>
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-8">
@@ -73,6 +74,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['update_total'])) {
       </div>
     </div>
   </div>
+  </br>
+</br>
+</br>
+</br>
+</br>
+
 </div>
 
 <?php include('include/footer.php');
