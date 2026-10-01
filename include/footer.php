@@ -53,5 +53,7 @@
         </div>
     </div>
 </footer>
+<!-----footer ends---------->
+
 </body>
 </html>
