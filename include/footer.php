@@ -10,10 +10,6 @@
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
                     India's premier campus discovery and cultural event ticketing network. Uniting collegiate cultural fests, collegiate pro-nites, and student creator communities across premier universities nationwide.
                 </p>
-                <div class="d-flex gap-2">
-                    <span class="badge rounded-pill" style="background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary); font-weight: 600; font-size: 11px; padding: 6px 12px;">Verified Student ID</span>
-                    <span class="badge rounded-pill" style="background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary); font-weight: 600; font-size: 11px; padding: 6px 12px;">Zero Scalping</span>
-                </div>
             </div>
             
             <!-- Col 2: Campus Circuits -->
@@ -39,14 +35,13 @@
                 </ul>
             </div>
 
-            <!-- Col 4: Integrity & Help -->
+            <!-- Col 4: Help & Support -->
             <div class="col-lg-3 col-md-4">
-                <h5 style="font-size: 13px; font-weight: 800; color: var(--text-primary); margin-bottom: 20px;">Integrity & Help</h5>
+                <h5 style="font-size: 13px; font-weight: 800; color: var(--text-primary); margin-bottom: 20px;">Help & Support</h5>
                 <ul class="list-unstyled d-flex flex-column gap-3" style="font-size: 13px; font-weight: 500;">
-                    <li><a href="#" class="text-decoration-none" style="color: var(--text-secondary);">Anti-Scalping Protocol</a></li>
-                    <li><a href="#" class="text-decoration-none" style="color: var(--text-secondary);">Instant UPI Refunds</a></li>
                     <li><a href="#" class="text-decoration-none" style="color: var(--text-secondary);">24x7 Campus Helpline</a></li>
                     <li><a href="#" class="text-decoration-none" style="color: var(--text-secondary);">Platform & Legal</a></li>
+                    <li><a href="#" class="text-decoration-none" style="color: var(--text-secondary);">Help Center</a></li>
                 </ul>
             </div>
         </div>
@@ -54,12 +49,6 @@
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4" style="border-top: 1px solid var(--border);">
             <div style="font-size: 12px; color: var(--text-muted);">
                 &copy; 2026 Bookvnts Technologies India Pvt. Ltd. Engineered for Indian Campus Culture.
-            </div>
-            <div class="d-flex align-items-center gap-3 mt-3 mt-md-0">
-                <span style="font-size: 10px; font-weight: 800; color: var(--text-muted); letter-spacing: 0.05em;">INSTANT SETTLEMENT</span>
-                <div class="d-flex align-items-center gap-2" style="background: var(--surface); padding: 4px 12px; border-radius: 9999px; border: 1px solid var(--border); font-size: 12px; font-weight: 700; color: var(--text-primary);">
-                    <i class="fa-solid fa-building-columns text-primary-custom"></i> UPI / Net Banking
-                </div>
             </div>
         </div>
     </div>

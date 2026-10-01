@@ -35,11 +35,11 @@ logout();
             
             <div class="collapse navbar-collapse" id="menu">
                 <!-- Center: Global Search Bar -->
-                <form class="d-none d-lg-flex mx-auto" style="flex: 1; max-width: 480px;">
+                <form class="d-none d-lg-flex mx-auto" style="flex: 1; max-width: 480px;" action="search.php" method="GET">
                     <div class="input-group global-search">
                         <span class="input-group-text bg-light border-0 text-muted"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control bg-light border-0 shadow-none" placeholder="Search fests, pro-nites, artists..." style="font-size: 14px; font-weight: 500;">
-                        <span class="input-group-text bg-light border-0"><kbd class="bg-white text-muted border" style="font-family: inherit; font-size: 11px;">⌘K</kbd></span>
+                        <input type="text" name="q" class="form-control bg-light border-0 shadow-none" placeholder="Search fests, pro-nites, artists..." style="font-size: 14px; font-weight: 500;" required>
+                        <button type="submit" class="input-group-text bg-light border-0" style="padding: 0 12px;"><kbd class="bg-white text-muted border" style="font-family: inherit; font-size: 11px;">↵</kbd></button>
                     </div>
                 </form>
 

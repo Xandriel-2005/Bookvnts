@@ -78,18 +78,18 @@ $result = mysqli_query($conn, $sql);
       <?php } ?>
     </div>
 
-    <!-- Zero Scalping Banner from image -->
+    <!-- Secure Pass Banner -->
     <div class="info-banner">
         <div class="banner-icon">
             <i class="fa-solid fa-qrcode"></i>
         </div>
         <div class="banner-content">
             <span style="font-size: 10px; font-weight: 700; color: var(--secondary); text-transform: uppercase;">Safe Campus Pass</span>
-            <h4>Zero Scalping. Verified Student IDs Only.</h4>
-            <p>Your Bookvnts QR refreshes dynamically every 30 seconds at the entry turnstile. Link your official campus roll number to claim subsidized prices.</p>
+            <h4>Secure Dynamic QR Passes.</h4>
+            <p>Your Bookvnts QR refreshes dynamically every 30 seconds at the entry turnstile. Seamless entry without the hassle of physical tickets.</p>
         </div>
         <div class="banner-action">
-            <button class="btn btn-primary" style="background: var(--text-primary) !important;">Verify Campus ID</button>
+            <button class="btn btn-primary" style="background: var(--text-primary) !important;">Learn More</button>
         </div>
     </div>
 

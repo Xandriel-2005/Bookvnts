@@ -34,7 +34,7 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
             <div style="background: url('assets/images/<?php echo $slide['img']; ?>') no-repeat center/cover; position:absolute; top:0;left:0;right:0;bottom:0;"></div>
             <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: linear-gradient(to bottom, rgba(15,23,42,0.8), rgba(15,23,42,0.95));"></div>
             <div class="hero-content text-center" style="position:relative; z-index:1; padding: 120px 20px 160px; color: white;">
-                <span class="hero-badge"><i class="fa-solid fa-fire"></i> Campus Circuits • Live Pro-Nites • 0% Scalping Guarantee</span>
+                <span class="hero-badge"><i class="fa-solid fa-fire"></i> Campus Circuits • Live Pro-Nites • Authentic Passes</span>
                 <h1 class="hero-title"><?php echo $slide['title']; ?></h1>
                 <p class="hero-subtitle"><?php echo $slide['sub']; ?></p>
             </div>
@@ -51,32 +51,16 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
 
 <!-- Floating Search Bar -->
 <div class="container hero-search-container">
-    <div class="hero-search-bar">
-        <div class="search-input-group">
+    <form action="search.php" method="GET" class="hero-search-bar m-0">
+        <div class="search-input-group flex-grow-1" style="flex: 1;">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <div class="input-stack">
-                <label>SEARCH</label>
-                <input type="text" placeholder="Artist, band, pro-nite, comedy club...">
+            <div class="input-stack" style="width: 100%;">
+                <label>SEARCH EVENTS</label>
+                <input type="text" name="q" placeholder="Artist, band, pro-nite, comedy club..." required style="width: 100%; border: none; background: transparent; outline: none; font-weight: 600;">
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="search-input-group">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="input-stack">
-                <label>CAMPUS CIRCUIT</label>
-                <select><option>All India Campuses</option></select>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="search-input-group">
-            <i class="fa-regular fa-calendar"></i>
-            <div class="input-stack">
-                <label>SCHEDULE</label>
-                <select><option>This Weekend</option></select>
-            </div>
-        </div>
-        <button class="btn btn-accent btn-find">Find Passes</button>
-    </div>
+        <button type="submit" class="btn btn-accent btn-find ms-3" style="border-radius: 9999px; padding: 12px 32px;">Find Passes</button>
+    </form>
 </div>
 
 <!-- Categories -->
@@ -234,10 +218,6 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
                     </div>
                 </div>
                 
-                <div class="verification-note mt-4 d-flex gap-2">
-                    <i class="fa-solid fa-circle-check text-danger mt-1"></i> 
-                    <div><strong>Verified Student IDs</strong> unlock instant institutional subsidies up to 40% off and offline WhatsApp pass QR delivery.</div>
-                </div>
             </div>
             
             <div class="committee-banner mt-3">
@@ -246,7 +226,7 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
                     <h5>College Fest Committee?</h5>
                     <p>List tickets & turnstile entry with 0% gateway commission.</p>
                 </div>
-                <button class="btn btn-light-custom">Host Event</button>
+                <button class="btn btn-light-custom" onclick="<?php echo isset($_SESSION['usr_id']) ? "window.location.href='c_event.php';" : "alert('You need to Login to host an event.'); window.location.href='login.php';"; ?>">Host Event</button>
             </div>
         </div>
     </div>
@@ -270,14 +250,14 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
             <div class="feature-card">
                 <div class="feature-icon bg-accent-soft text-accent"><i class="fa-solid fa-ticket"></i></div>
                 <h4>Exclusive Campus Subsidies</h4>
-                <p>Direct institutional tie-ups guarantee transparent, pre-negotiated student passes with no hidden convenience surcharges.</p>
+                <p>Direct institutional tie-ups guarantee transparent, pre-negotiated event passes with no hidden convenience surcharges.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="feature-card">
                 <div class="feature-icon bg-slate-soft text-slate"><i class="fa-solid fa-shield-halved"></i></div>
-                <h4>Anti-Scalping Guarantee</h4>
-                <p>Every pass is linked to verified student roll numbers or Aadhaar IDs. Re-selling or bot hoardings are strictly neutralized.</p>
+                <h4>Secure Digital Access</h4>
+                <p>Every pass is securely encrypted. Enjoy peace of mind with our robust digital entry protocols that ensure a safe environment for all attendees.</p>
             </div>
         </div>
     </div>
@@ -289,7 +269,7 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
         <div>
             <span class="badge text-white border border-white mb-3" style="opacity:0.8; font-size: 10px; padding: 6px 12px; border-radius: 9999px; letter-spacing: 0.05em;">CAMPUS CIRCUITS ACROSS INDIA</span>
             <h2>Ready to launch your college pro-nite?</h2>
-            <p>Get real-time box office analytics, turnstile gate scanners for volunteer teams, and instant UPI payouts for campus fests.</p>
+            <p>Get real-time box office analytics, turnstile gate scanners for volunteer teams, and instant settlements for campus fests.</p>
         </div>
         <div class="cta-actions">
             <button class="btn btn-white text-dark fw-bold px-4 py-2 rounded-pill shadow-sm">List Your Fest</button>
