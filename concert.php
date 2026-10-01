@@ -10,17 +10,14 @@ $result = mysqli_query($conn, $sql);
         <p class="page-subtitle">Experience electric collegiate headline tours, open-mic spoken word nights, and cultural festival stages across Tier-1 campuses nationwide.</p>
     </div>
 
-    <!-- Filter Bar (mockup from image) -->
-    <div class="filter-bar">
-        <div class="filter-input">
+    <!-- Filter Bar -->
+    <form action="search.php" method="GET" class="filter-bar m-0 mb-4" style="display: flex; gap: 16px;">
+        <div class="filter-input flex-grow-1">
             <i class="fa-solid fa-search"></i>
-            <input type="text" placeholder="Search artist, band, campus, or venue...">
+            <input type="text" name="q" placeholder="Search artist, band, campus, or venue..." required style="width:100%; border:none; outline:none; background:transparent;">
         </div>
-        <div class="filter-input" style="flex: 0.5;">
-            <i class="fa-solid fa-location-dot"></i>
-            <select><option>All Circuits (Delhi NCR, BLR, BC)</option></select>
-        </div>
-    </div>
+        <button type="submit" class="btn btn-dark-custom" style="border-radius: 9999px; padding: 0 32px; white-space: nowrap;">Search</button>
+    </form>
 
     <div class="row g-4">
       <?php while($row = mysqli_fetch_assoc($result)){ 

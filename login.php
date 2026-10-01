@@ -1,27 +1,31 @@
 <?php
 include('include/header.php');
 ?>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <!----loginStarts--------->
-    <div class="container">
-    <h3 class="text-center">LogIn</h3>
-    <form method="post" action="login.php" enctype="multipart/form-data">
-            <div class="mb-5">
-                <label>Enter User name</label>
-                <input type="text" name="usr_id" placeholder="Enter Your User-Id" class="form-control">
+<div class="container mt-5 pt-5 pb-5 d-flex justify-content-center">
+    <div class="login-hub-card" style="width: 100%; max-width: 450px;">
+        <div class="text-center mb-4">
+            <div class="icon-circle mx-auto mb-3" style="width: 56px; height: 56px; background: #E0F2FE; color: var(--primary); font-size: 20px;"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+            <h2 class="section-title" style="font-size: 24px;">Welcome Back</h2>
+            <p class="text-muted small">Log in to book tickets and manage your events.</p>
+        </div>
+        
+        <form method="post" action="login.php">
+            <div class="mb-3">
+                <label class="form-label text-muted small fw-bold" style="font-size: 11px;">User ID</label>
+                <input type="text" name="usr_id" class="form-control bg-light border-0" placeholder="Enter Your User-Id" style="padding: 12px 16px;">
             </div>
-			<div class="mb-5">
-				<label>Enter your Password</label>
-				<input type="password" name="password" placeholder="**************" class="form-control">
-			</div>
-			<div class="mb-5">
-				<button type="submit" name="submit" class="btn btn-success w-100">LogIn</button>
-                <p>Account doesn't exist? | <a href="signup.php">Register/Sign Up</a></p>
-			</div>
-    </form>
+            <div class="mb-4">
+                <div class="d-flex justify-content-between">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Password</label>
+                </div>
+                <input type="password" name="password" class="form-control bg-light border-0" placeholder="••••••••••••" style="padding: 12px 16px;">
+            </div>
+            <button type="submit" name="submit" class="btn btn-dark-custom w-100 py-3 mb-3">Login</button>
+            <div class="text-center">
+                <span class="text-muted small">Don't have an account? <a href="signup.php" class="text-primary-custom fw-bold text-decoration-none">Sign Up</a></span>
+            </div>
+        </form>
+    </div>
 </div>
 <?php
 include('include/footer.php');

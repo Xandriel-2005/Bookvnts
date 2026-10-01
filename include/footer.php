@@ -5,7 +5,7 @@
             <!-- Col 1: Brand -->
             <div class="col-lg-4">
                 <a href="index.php" class="d-inline-block mb-3">
-                    <img src="assets/images/logo-long.png" alt="Bookvnts" style="height: 32px; object-fit: contain;">
+                    <img src="assets/images/logo-long.png?v=<?php echo time(); ?>" alt="Bookvnts" style="height: 75px; width: auto; max-width: 250px; object-fit: contain;">
                 </a>
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
                     India's premier campus discovery and cultural event ticketing network. Uniting collegiate cultural fests, collegiate pro-nites, and student creator communities across premier universities nationwide.

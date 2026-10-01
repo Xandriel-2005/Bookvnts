@@ -1,66 +1,74 @@
 <?php
 include('include/header.php');
 ?>
-<br/>
-<br/>
-<br/>
-</br>
-</br>
-</br>
-<!---------PageStart---->
-<h2 class="text-center mb-4">Create New Event</h2>
-<div class="container mt-5 mb-5">
-    <form method="post" action="c_event.php" enctype="multipart/form-data">
-        <div class="mb-5">
-            <label>Event Title</label>
-            <input type="text" name="evnt_title" class="form-control" required>
+<div class="container mt-5 pt-5 pb-5 d-flex justify-content-center">
+    <div class="login-hub-card" style="width: 100%; max-width: 650px;">
+        <div class="text-center mb-4">
+            <div class="icon-circle mx-auto mb-3" style="width: 56px; height: 56px; background: #ECFDF5; color: #047857; font-size: 20px;"><i class="fa-solid fa-calendar-plus"></i></div>
+            <h2 class="section-title" style="font-size: 24px;">Host a Campus Event</h2>
+            <p class="text-muted small">List your pro-nite or cultural fest seamlessly.</p>
         </div>
-        <div class="mb-5">
-            <label>Event Type</label>
-            <select class="form-select" name="evnt_type" required>
-                <option value="">Select</option>
-                <option>Movies</option>
-                <option>Concert</option>
-                <option>Musical Night</option>
-                <option>Award Ceremony</option>
-                <option>Sports</option>
-                <option>Comedy Shows</option>
-    </select>
-
-        </div>
-        <div class="mb-5">
-            <label>Description</label>
-            <textarea name="evnt_dicpt" class="form-control" required></textarea>
-        </div>
-        <div class="mb-5">
-            <label>Venue</label>
-            <input type="text" name="evnt_venue" class="form-control" required>
-        </div>
-        <div class="mb-5">
-            <label>Date</label>
-            <input type="date" name="evnt_date" class="form-control" required>
-        </div>
-        <div class="mb-5">
-            <label>Time</label>
-            <input type="time" name="evnt_time" class="form-control" required>
-        </div>
-        <div class="mb-5">
-            <label>Poster</label>
-            <input type="file" name="evnt_poster" class="form-control">
-        </div>
-        <div class="mb-5">
-            <label>Total Tickets</label>
-            <input type="number" name="evnt_tot_tkt" class="form-control" required>
-        </div>
-        <div class="mb-5">
-            <label>Ticket Price</label>
-            <input type="number" name="evnt_tkt_price" class="form-control" required>
-        </div>
-        <button type="submit" name="submit" class="btn btn-primary w-100">Create Event</button>
-    </form>
+        
+        <form method="post" action="c_event.php" enctype="multipart/form-data">
+            <div class="row g-3 mb-3">
+                <div class="col-md-7">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Event Title</label>
+                    <input type="text" name="evnt_title" class="form-control bg-light border-0" placeholder="e.g. Sunburn Campus Beats" style="padding: 12px 16px;" required>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Event Type</label>
+                    <select class="form-select bg-light border-0" name="evnt_type" style="padding: 12px 16px;" required>
+                        <option value="">Select Category</option>
+                        <option>Movies</option>
+                        <option>Concert</option>
+                        <option>Musical Night</option>
+                        <option>Award Ceremony</option>
+                        <option>Sports</option>
+                        <option>Comedy Shows</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Description</label>
+                <textarea name="evnt_dicpt" class="form-control bg-light border-0" rows="3" placeholder="Describe the event, artists, and schedule..." style="padding: 12px 16px;" required></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Venue</label>
+                <input type="text" name="evnt_venue" class="form-control bg-light border-0" placeholder="e.g. OAT Amphitheater" style="padding: 12px 16px;" required>
+            </div>
+            
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Date</label>
+                    <input type="date" name="evnt_date" class="form-control bg-light border-0" style="padding: 12px 16px;" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Time</label>
+                    <input type="time" name="evnt_time" class="form-control bg-light border-0" style="padding: 12px 16px;" required>
+                </div>
+            </div>
+            
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Total Passes</label>
+                    <input type="number" name="evnt_tot_tkt" class="form-control bg-light border-0" placeholder="Capacity" style="padding: 12px 16px;" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Price (₹)</label>
+                    <input type="number" name="evnt_tkt_price" class="form-control bg-light border-0" placeholder="e.g. 499" style="padding: 12px 16px;" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small fw-bold" style="font-size: 11px;">Upload Poster</label>
+                    <input type="file" name="evnt_poster" class="form-control bg-light border-0" style="padding: 9px 12px;">
+                </div>
+            </div>
+            
+            <button type="submit" name="submit" class="btn btn-accent w-100 py-3">Publish Event</button>
+        </form>
+    </div>
 </div>
-</body>
-</html>
 <?php
 if(isset($_POST['submit'])){
     // check if user is logged in 

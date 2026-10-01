@@ -25,8 +25,8 @@ logout();
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" style="box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04); border-bottom: 1px solid var(--border);">
         <div class="container-fluid px-4">
             <!-- Left: Logo -->
-            <a class="navbar-brand me-4" href="index.php">
-                <img src="assets/images/logo-long.png" alt="Bookvnts" style="height: 32px; object-fit: contain;">
+            <a class="navbar-brand me-4 d-flex align-items-center" href="index.php">
+                <img src="assets/images/logo-long.png?v=<?php echo time(); ?>" alt="Bookvnts" style="height: 75px; width: auto; max-width: 250px; object-fit: contain; margin: -10px 0;">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -62,16 +62,16 @@ logout();
                     
                     <div class="vr mx-2 d-none d-lg-block" style="opacity: 0.1;"></div>
                     
-                    <li class="nav-item"><a href="#" class="nav-link text-muted"><i class="fa-regular fa-bell"></i></a></li>
-                    
                     <?php if (isset($_SESSION['usr_id'])): ?>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item me-2 d-flex align-items-center">
+                            <a href="c_event.php" class="btn btn-accent" style="font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 9999px;">Create Event</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
                             <a href="#" class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-0" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="icon-circle bg-primary-soft text-primary-custom m-0" style="width: 32px; height: 32px; font-size: 14px;"><i class="fa-regular fa-user"></i></div>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm" style="border-radius: 12px; margin-top: 10px;">
                                 <li><a class="dropdown-item" href="profile.php">Profile</a></li>
-                                <li><a class="dropdown-item" href="c_event.php">Create Event</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
                                     <form method="post" class="px-3 py-1 m-0">

@@ -272,8 +272,7 @@ $hot_events_result = mysqli_query($conn, $hot_events_query);
             <p>Get real-time box office analytics, turnstile gate scanners for volunteer teams, and instant settlements for campus fests.</p>
         </div>
         <div class="cta-actions">
-            <button class="btn btn-white text-dark fw-bold px-4 py-2 rounded-pill shadow-sm">List Your Fest</button>
-            <button class="btn btn-outline-white px-4 py-2 rounded-pill">Scanner App</button>
+            <button class="btn btn-white text-dark fw-bold px-4 py-2 rounded-pill shadow-sm" onclick="<?php echo isset($_SESSION['usr_id']) ? "window.location.href='c_event.php';" : "alert('You need to Login to list a fest.'); window.location.href='login.php';"; ?>">List Your Fest</button>
         </div>
     </div>
 </div>
